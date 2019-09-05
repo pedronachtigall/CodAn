@@ -26,7 +26,7 @@ export PATH:$PATH:path/to/CodAn/bin/
 
 - Biopython
 - Bioperl
-- NCBI-BlAST (v2.9.0 or above)
+- NCBI-BLAST (v2.9.0 or above)
 
 # Usage
 
@@ -42,7 +42,7 @@ Options:
                         Mandatory - path to model, /path/to/model
   -s string, --strand=string
                         Optional - strand of sequence to predict genes (plus,
-                        minus or both) [default=plus]
+                        minus or both) [default=both]
   -c int, --cpu=int     Optional - number of threads to be used [default=1]
   -o folder, --output=folder
                         Optional - path to output folder,
