@@ -10,12 +10,14 @@ Getting Started
 
 # Installation
 
-Extract the tool from the tar.gz file:
+Decompress the tar.gz file:
+
 ```
 tar -xf CodAn.tar.gz
 ```
 
 Add the bin directory to your PATH:
+
 ```
 export PATH:$PATH:path/to/CodAn/bin/
 ```
