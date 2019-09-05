@@ -76,6 +76,6 @@ The predictive models are at the folder named "models" and have the models desig
 Reference
 =========
 
-If you use CodAn in your analysis, please cite:
+If you use CodAn, please cite:
 
 Nachtigall et al., under review
