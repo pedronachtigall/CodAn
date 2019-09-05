@@ -1,4 +1,4 @@
-![codan_logo](/codan_logo.png)
+#![codan_logo](/codan_logo.png)
 
 CodAn
 =======
