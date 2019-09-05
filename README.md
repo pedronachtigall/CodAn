@@ -66,6 +66,8 @@ Alternative usage (predict CDS and UTR sequences and perform BLAST search  in sp
 ```
 codan.py -t transcripts.fa -o output_folder -m model_folder -b blast_DB
 ```
+To run this optional step, just indicate a specific protein DB mounted using the "makeblastdb" from the NCBI-BLAST approach.
+The user can download the pre-mounted protein DBs, such as swissprot, from ftp://ftp.ncbi.nlm.nih.gov/blast/db/ .
 
 # Predictive models
 
