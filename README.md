@@ -65,6 +65,8 @@ Alternative usage (predict CDS and UTR sequences and perform BLAST search  in sp
 codan.py -t transcripts.fa -o output_folder -m model_folder -b blast_DB
 ```
 
+The models are at the folder named "models" and has predictive models designed for Eukaryote species (i.e., Fungi, Plants and Animals [Invertebrates and Vertebrates]). The models were designed to be used in Full-Length or partial transcripts. Download the model specific to your necessities, as described at the "models" folder, and indicate de decompressed model folder path in the "-m" option.
+
 Reference
 =========
 
