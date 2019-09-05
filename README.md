@@ -3,7 +3,7 @@
 CodAn
 =======
 
-A tool to characterize the CDS and UTR regions on any Eukaryote species.
+**CodAn** (**Cod**ing sequence **An**notator) is a computational tool designed to characterize the CDS and UTR regions on any Eukaryote species.
 
 Getting Started
 =================
