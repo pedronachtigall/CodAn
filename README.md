@@ -79,3 +79,8 @@ Reference
 If you use CodAn, please cite:
 
 Nachtigall et al., under review
+
+Contact
+=======
+
+To report bugs, to ask for help and to give any feedback, please contact Pedro G. Nachtigall: pedronachtigall@gmail.com .
