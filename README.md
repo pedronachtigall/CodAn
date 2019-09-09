@@ -80,7 +80,13 @@ If you use CodAn, please cite:
 
 Nachtigall et al., under review
 
+License
+=======
+
+[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html)
+
 Contact
 =======
 
 To report bugs, to ask for help and to give any feedback, please contact Pedro G. Nachtigall: pedronachtigall@gmail.com .
+
