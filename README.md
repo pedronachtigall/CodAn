@@ -24,9 +24,9 @@ export PATH:$PATH:path/to/CodAn/bin/
 
 # Requirements
 
-- Biopython
-- Bioperl
-- NCBI-BLAST (v2.9.0 or above)
+- [Biopython](https://biopython.org/wiki/Download)
+- [Bioperl](https://bioperl.org/)
+- [NCBI-BLAST](https://www.ncbi.nlm.nih.gov/books/NBK279671/) (v2.9.0 or above)
 
 # Usage
 
