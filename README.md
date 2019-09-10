@@ -58,12 +58,12 @@ Options:
 
 ```
 
-Basic usage (find CDS and UTR sequences):
+Basic usage (predict CDS):
 ```
 codan.py -t transcripts.fa -o output_folder -m model_folder
 ```
 
-Alternative usage (predict CDS and UTR sequences and perform BLAST search  in specific DB to annotated predicted genes based on similarity):
+Alternative usage (predict CDS and perform BLAST search in specific DB to annotated predicted genes based on similarity):
 ```
 codan.py -t transcripts.fa -o output_folder -m model_folder -b blast_DB
 ```
@@ -89,5 +89,5 @@ License
 Contact
 =======
 
-To report bugs, to ask for help and to give any feedback, please contact Pedro G. Nachtigall: pedronachtigall@gmail.com .
+To report bugs, to ask for help and to give any feedback, please contact **Pedro G. Nachtigall**: pedronachtigall@gmail.com .
 
