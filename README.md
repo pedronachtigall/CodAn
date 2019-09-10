@@ -72,7 +72,7 @@ The user can download the pre-mounted protein DBs, such as swissprot (ftp://ftp.
 
 # Predictive models
 
-The predictive models are at the folder named "models" and have the models designed for Eukaryote species (i.e., Fungi, Plants and Animals [Invertebrates and Vertebrates]). The models were designed to be used in Full-Length or partial transcripts. Download the model specific to your necessities, as described at the "models" folder, and indicate de decompressed model folder path in the "-m" option.
+The predictive models are available in the folder "models". The folder contains all models designed for Eukaryote species (i.e., Fungi, Plants and Animals [Invertebrates and Vertebrates]). The models were designed to be used in Full-Length or partial transcripts. Download the model specific to your necessities, as described at the "models" folder, decompress the model file, and indicate de decompressed model folder path in the "-m" option.
 
 Reference
 =========
