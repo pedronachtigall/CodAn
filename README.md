@@ -2,6 +2,7 @@
 
 CodAn
 =======
+[![Latest GitHub release](https://img.shields.io/github/release/pedronachtigall/CodAn.svg)](https://github.com/pedronachtigall/CodAn/releases/latest)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3403273.svg)](https://doi.org/10.5281/zenodo.3403273)
 
 **CodAn** (**Cod**ing sequence **An**notator) is a computational tool designed to characterize the CDS and UTR regions on transcripts from any Eukaryote species.
