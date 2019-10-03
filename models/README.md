@@ -18,4 +18,4 @@ Download the model specific to your necessities and decompress the file:
 unzip model.zip
 ```
 
-Indicate the folder to the option "-m" of the CodAn tool.
+Indicate the folder to the "-m" option of the CodAn tool.
