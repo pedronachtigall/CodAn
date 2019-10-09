@@ -35,12 +35,12 @@ codan.py -t transcripts.fa -m VERT_partial -o CodAn_partial_test
 
 Running the BLAST search
 ========================
-To run the BLAST search in the coding sequences predicted jut use the option ```-b``` and indicate the path to a protein blast database pre-designed or generated with the ```makeblastdb``` function from NCBI-BLAST.
+To run the BLAST search in the coding sequences predicted jut use the option ```-b``` and indicate the path to a protein blast database pre-designed or generated with the ```makeblastdb``` function from [NCBI-BLAST](https://www.ncbi.nlm.nih.gov/books/NBK279671/).
 ```
 makeblastdb -dbtype prot -in protein_sequences.fa -out blastDB
 ```
 
-Then run CodAn with the following options:
+Then, run CodAn with the following options:
 ```
 codan.py -t transcripts.fa -m VERT_full -o CodAn_test_blast -b blastDB
 ```
