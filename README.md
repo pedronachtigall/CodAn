@@ -23,7 +23,7 @@ tar -xf CodAn.tar.gz
 Add the bin directory to your PATH:
 
 ```
-export PATH:$PATH:path/to/CodAn/bin/
+export PATH=$PATH:path/to/CodAn/bin/
 ```
 
 # Requirements
@@ -33,6 +33,12 @@ export PATH:$PATH:path/to/CodAn/bin/
 - [Perl](https://www.perl.org/), [Bioperl](https://bioperl.org/) and [MCE](https://metacpan.org/release/MCE) (libmce-perl)
     - ```apt-get install bioperl libmce-perl```
 - [NCBI-BLAST](https://www.ncbi.nlm.nih.gov/books/NBK279671/) (v2.9.0 or above)
+
+# Predictive models
+
+The predictive models are available in the subfolder ["models"](https://github.com/pedronachtigall/CodAn/tree/master/models). The folder contains all models designed for Eukaryote species (i.e., Fungi, Plants and Animals [Invertebrates and Vertebrates]). The models were designed to be used in Full-Length or Partial transcripts.
+
+Download the model specific to your necessities, as described at the ["models"](https://github.com/pedronachtigall/CodAn/tree/master/models) folder, decompress the model file (using ```unzip model.zip```), and indicate the decompressed model path in the ```-m``` option.
 
 # Usage
 
@@ -65,19 +71,15 @@ Options:
 
 Basic usage (predict CDS):
 ```
-codan.py -t transcripts.fa -o output_folder -m model_folder
+codan.py -t transcripts.fa -o output_folder -m model
 ```
 
 Alternative usage (predict CDS and perform BLAST search in specific DB to annotated predicted genes based on similarity):
 ```
-codan.py -t transcripts.fa -o output_folder -m model_folder -b blast_DB
+codan.py -t transcripts.fa -o output_folder -m model -b blast_DB
 ```
 To run this optional step, just indicate a specific protein DB mounted using the ```makeblastdb``` function from the NCBI-BLAST approach.
 The user can download the pre-mounted protein DBs, such as swissprot (ftp://ftp.ncbi.nlm.nih.gov/blast/db/).
-
-# Predictive models
-
-The predictive models are available in the folder "models". The folder contains all models designed for Eukaryote species (i.e., Fungi, Plants and Animals [Invertebrates and Vertebrates]). The models were designed to be used in Full-Length or partial transcripts. Download the model specific to your necessities, as described at the "models" folder, decompress the model file, and indicate de decompressed model folder path in the "-m" option.
 
 # Tutorial
 Follow the instructions in the quick [tutorial](https://github.com/pedronachtigall/CodAn/tree/master/tutorial) to learn how to use CodAn and interpret the results.
