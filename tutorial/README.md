@@ -25,7 +25,7 @@ Running the Partial model
 
 Decompress the model "VERT_partial.zip":
 ```
-unzip VERT_full.zip
+unzip VERT_partial.zip
 ```
 
 Then, run CodAn:
