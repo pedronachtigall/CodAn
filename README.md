@@ -28,8 +28,10 @@ export PATH:$PATH:path/to/CodAn/bin/
 
 # Requirements
 
-- [Biopython](https://biopython.org/wiki/Download)
-- [Bioperl](https://bioperl.org/)
+- [Python3](https://www.python.org/) and [Biopython](https://biopython.org/wiki/Download)
+    - ```apt-get install python3-biopython```
+- [Perl](https://www.perl.org/), [Bioperl](https://bioperl.org/) and MCE (libmce-perl)
+    - ```apt-get install bioperl libmce-perl```
 - [NCBI-BLAST](https://www.ncbi.nlm.nih.gov/books/NBK279671/) (v2.9.0 or above)
 
 # Usage
@@ -80,9 +82,9 @@ The predictive models are available in the folder "models". The folder contains 
 Reference
 =========
 
-If you use or discuss CodAn, please cite:
+If you use or discuss CodAn, please cite the preprint:
 
-Nachtigall et al., under review
+[Nachtigall et al. CodAn: predictive models for the characterization of mRNA transcripts in Eukaryotes](https://www.biorxiv.org/content/10.1101/794107v1)
 
 License
 =======
