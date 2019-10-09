@@ -30,7 +30,7 @@ export PATH:$PATH:path/to/CodAn/bin/
 
 - [Python3](https://www.python.org/) and [Biopython](https://biopython.org/wiki/Download)
     - ```apt-get install python3-biopython```
-- [Perl](https://www.perl.org/), [Bioperl](https://bioperl.org/) and MCE (libmce-perl)
+- [Perl](https://www.perl.org/), [Bioperl](https://bioperl.org/) and [MCE](https://metacpan.org/release/MCE) (libmce-perl)
     - ```apt-get install bioperl libmce-perl```
 - [NCBI-BLAST](https://www.ncbi.nlm.nih.gov/books/NBK279671/) (v2.9.0 or above)
 
