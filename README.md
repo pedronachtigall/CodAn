@@ -14,7 +14,7 @@ Getting Started
 
 # Installation
 
-Decompress the tar.gz file:
+Decompress the [CodAn.tar.gz](https://github.com/pedronachtigall/CodAn/blob/master/CodAn.tar.gz) file:
 
 ```
 tar -xf CodAn.tar.gz
