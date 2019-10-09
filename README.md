@@ -79,6 +79,9 @@ The user can download the pre-mounted protein DBs, such as swissprot (ftp://ftp.
 
 The predictive models are available in the folder "models". The folder contains all models designed for Eukaryote species (i.e., Fungi, Plants and Animals [Invertebrates and Vertebrates]). The models were designed to be used in Full-Length or partial transcripts. Download the model specific to your necessities, as described at the "models" folder, decompress the model file, and indicate de decompressed model folder path in the "-m" option.
 
+# Tutorial
+Follow the instructions in the quick [tutorial](https://github.com/pedronachtigall/CodAn/tree/master/tutorial) to learn how to use CodAn and interpret the results.
+
 Reference
 =========
 
