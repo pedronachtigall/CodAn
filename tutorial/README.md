@@ -22,6 +22,8 @@ codan.py -t transcripts.fa -m VERT_full
 
 The output files will be available at the "CodAn_output" folder. If you want to specify the name of the output folder use the option ```-o output_folder```. CodAn uses only one thread by default ```-c 1```, but the user can specify the use of more threads by using the option ```-c int``` to accelerate the process.
 
+By default, CodAn performs the predition on both strands of the input transcripts (```-s both```). But the user can specify the strand to be used in the prediction using the option ```-s str```. To run the predictions only in one of the strands, use the parameter ```-s plus``` for the plus strand and the parameter ```-s minus``` for the minus strand.
+
 Running the Partial model
 =========================
 
