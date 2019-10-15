@@ -10,6 +10,9 @@ This folder contain the models used for CDS prediction:
 - **VERT_full**: model to predict CDS in Full-Length transcripts of VERTEBRATE species.
 - **VERT_partial**: model to predict CDS in partial transcripts of INVERTEBRATE species.
 
+The models are a set of subfolders and files with all parameters specific to each group used in the prediction step of CodAn.
+
+
 Usage
 =====
 
