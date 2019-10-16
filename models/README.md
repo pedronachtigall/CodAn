@@ -21,4 +21,4 @@ Download the model specific to your necessities and decompress the file:
 unzip GROUP_model.zip
 ```
 
-Indicate the decompressed model to the ```-m``` option of the CodAn tool (```-m path/to/the/model/GROUP_model```).
+Indicate the decompressed model to the ```-m``` option of the CodAn tool (```-m path/to/the/GROUP_model```).
