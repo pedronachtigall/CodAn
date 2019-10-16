@@ -40,6 +40,11 @@ The predictive models are available in the subfolder ["models"](https://github.c
 
 Download the model specific to your necessities, as described at the ["models"](https://github.com/pedronachtigall/CodAn/tree/master/models) folder, decompress the model file (using ```unzip model.zip```), and indicate the decompressed model path in the ```-m``` option.
 
+For example, if you are working with Full length transcripts generated from some vertebrate species and will perform the CDS prediction using the Vertebrate Full model.
+   - Download the [VERT_full](https://github.com/pedronachtigall/CodAn/blob/master/models/VERT_full.zip) model
+   - Decompress the model: ```unzip VERT_full.zip```
+   - Indicate the decompressed model to the ```-m``` option: ```-m path/to/VERT_full```
+
 # Usage
 
 ```
