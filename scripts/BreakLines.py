@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #script to break the sequences into 100 nucleotides per line
 #Author: Pedro G. Nachtigall (pedronachtigall@gmail.com)
 
