@@ -89,6 +89,57 @@ The user can download the pre-mounted protein DBs, such as swissprot (ftp://ftp.
 # Tutorial
 Follow the instructions in the quick [tutorial](https://github.com/pedronachtigall/CodAn/tree/master/tutorial) to learn how to use CodAn and interpret the results.
 
+Frequently Asked Questions (FAQ)
+================================
+
+CodAn is returning error messages. What to do?
+
+- Ensure that all modules are working properly
+    - go to the CodAn folder and run each module separetly as follow:
+    - tops-viterbi-decoding
+    ```
+    $tops-viterbi_decoding
+    tops-viterbi_decoding: ToPS version "master 00f9ed6"
+    Allowed options:
+          -h [ --help ]         produce help message
+          -m [ --model ] arg    a decodable model
+          -F [ --fasta ]        use fasta format
+    ```
+    - predict
+    ```
+    $ predict
+    ERROR: missing fasta file name !
+    USAGE: predict [-g <genome> | -t <transcriptome> | -z <local transcriptome predictor> | -s <local genome predictor] -f <fasta file> [-c <number of cpu>]
+    ```
+    - CodAn
+    ```
+       _____           _  ___
+      /  __ \         | |/ _ \
+      | /  \/ ___   __| / /_\ \_ __
+      | |    / _ \ / _` |  _  | '_ \
+      | \__/\ (_) | (_| | | | | | | |
+       \____/\___/ \__,_\_| |_/_| |_|
+
+
+    >>>> CodAn v1.0 September 2019 <<<<
+    ****Use -h for help!****
+    
+    BASIC USAGE (find CDS and UTR sequences):
+    codan.py -t transcripts.fa -o output_folder -m model_folder
+    
+    ALTERNATIVE USAGE (predict CDS and UTR sequences and perform BLAST search  in specific DB to annotated predicted genes based on similarity):
+    codan.py -t transcripts.fa -o output_folder -m model_folder -b blast_DB
+    ```
+    - if any differente messages print at your terminal then you have troubles with the dependencies, try to re-install them.
+
+- Ensure that the headers don't have symbols such as ":" or "|" or " "(space).
+
+- The Bio::DB::Fasta library is responsible for creating the .index. It can't process a fasta file with lines containing more than 65,536 characters. So, if you have any large sequence in one unique line, do the following:
+    - download the script [BreakLines.py](https://github.com/pedronachtigall/CodAn/blob/master/scripts/BreakLines.py)
+    - run BreakLines script: ```python3 BreakLines.py input.fasta output_breaklines.fasta```
+    - use the "output_breaklines.fasta" to run CodAn.
+
+
 Reference
 =========
 
