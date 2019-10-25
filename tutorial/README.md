@@ -3,7 +3,7 @@ Tutorial
 
 A quick tutorial to use CodAn.
 
-Download the file [transcripts.fa](https://github.com/pedronachtigall/CodAn/blob/master/tutorial/transcripts.fa), which has 500 full transcript sequences from *Danio rerio*.
+Download the file ["transcripts.fa"](https://github.com/pedronachtigall/CodAn/blob/master/tutorial/transcripts.fa), which has 500 full transcript sequences from *Danio rerio*.
 
 Download the ["VERT_full.zip"](https://github.com/pedronachtigall/CodAn/blob/master/models/VERT_full.zip) and ["VERT_partial.zip"](https://github.com/pedronachtigall/CodAn/blob/master/models/VERT_partial.zip) models available at the subfolder ["CodAn/models/"](https://github.com/pedronachtigall/CodAn/tree/master/models).
 
@@ -20,6 +20,35 @@ Then, run CodAn:
 codan.py -t transcripts.fa -m VERT_full
 ```
 
+Expected print message at the terminal:
+```
+  _____           _  ___        
+ /  __ \         | |/ _ \       
+ | /  \/ ___   __| / /_\ \_ __  
+ | |    / _ \ / _` |  _  | '_ \ 
+ | \__/\ (_) | (_| | | | | | | |
+  \____/\___/ \__,_\_| |_/_| |_|
+                          
+        
+2019-10-25 09:23:13 >>>> starting CodAn (v1.0 September 2019)...
+	transcript file -> transcripts.fa
+	model -> VERT_full
+	strand prediction -> both
+	number of threads -> 1
+2019-10-25 09:23:13 >>>> CDS prediction...
+2019-10-25 09:24:42 >>>> retrieving sequences...
+	number of transcripts -> 500
+	number of predictions -> 487
+		predictions at plus strand -> 486
+		predictions at minus strand -> 1
+2019-10-25 09:24:42 >>>> prediction finished!
+	CDS -> CodAn_output/ORF_sequences.fasta
+	3'UTR -> CodAn_output/3utr_sequences.fasta
+	5'UTR -> CodAn_output/5utr_sequences.fasta
+	GTF file -> CodAn_output/annotation.gtf
+```
+
+
 The output files will be available at the "CodAn_output" folder. If you want to specify the name of the output folder use the option ```-o output_folder```. CodAn uses only one thread by default ```-c 1```, but the user can specify the use of more threads by using the option ```-c int``` to accelerate the process.
 
 By default, CodAn performs the predition on both strands of the input transcripts (```-s both```). But the user can specify the strand to be used in the prediction using the option ```-s str```. To run the predictions only in one of the strands, use the parameter ```-s plus``` for the plus strand and the parameter ```-s minus``` for the minus strand.
@@ -35,6 +64,34 @@ unzip VERT_partial.zip
 Then, run CodAn:
 ```
 codan.py -t transcripts.fa -m VERT_partial -o CodAn_partial_test
+```
+
+Expected print message at the terminal:
+```
+  _____           _  ___        
+ /  __ \         | |/ _ \       
+ | /  \/ ___   __| / /_\ \_ __  
+ | |    / _ \ / _` |  _  | '_ \ 
+ | \__/\ (_) | (_| | | | | | | |
+  \____/\___/ \__,_\_| |_/_| |_|
+                          
+        
+2019-10-25 09:32:17 >>>> starting CodAn (v1.0 September 2019)...
+	transcript file -> transcripts.fa
+	model -> /media/nachtigall/413C3C5E0D0853F9/Linux/pos_doc_USP/3utr/fUTR/treinamento/modelos_treinados/VERT_partial
+	strand prediction -> both
+	number of threads -> 1
+2019-10-25 09:32:17 >>>> CDS prediction...
+2019-10-25 09:33:43 >>>> retrieving sequences...
+	number of transcripts -> 500
+	number of predictions -> 488
+		predictions at plus strand -> 487
+		predictions at minus strand -> 1
+2019-10-25 09:33:43 >>>> prediction finished!
+	CDS -> CodAn_output/ORF_sequences.fasta
+	3'UTR -> CodAn_output/3utr_sequences.fasta
+	5'UTR -> CodAn_output/5utr_sequences.fasta
+	GTF file -> CodAn_output/annotation.gtf
 ```
 
 Running the BLAST search
