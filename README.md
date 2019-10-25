@@ -130,7 +130,7 @@ CodAn is returning error messages. What to do?
     ALTERNATIVE USAGE (predict CDS and UTR sequences and perform BLAST search  in specific DB to annotated predicted genes based on similarity):
     codan.py -t transcripts.fa -o output_folder -m model_folder -b blast_DB
     ```
-    - if any differente messages print at your terminal then you have troubles with the dependencies, try to re-install them.
+    - if any differente messages print at your terminal, you have problems with the dependencies, try to re-install them.
 
 - Ensure that the headers don't have symbols such as ":" or "|" or " "(space).
 
