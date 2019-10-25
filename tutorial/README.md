@@ -3,7 +3,7 @@ Tutorial
 
 A quick tutorial to use CodAn.
 
-Download the file ```transcripts.fa```, which has 500 full transcript sequences from *Danio rerio*.
+Download the file [transcripts.fa](https://github.com/pedronachtigall/CodAn/blob/master/tutorial/transcripts.fa), which has 500 full transcript sequences from *Danio rerio*.
 
 Download the ["VERT_full.zip"](https://github.com/pedronachtigall/CodAn/blob/master/models/VERT_full.zip) and ["VERT_partial.zip"](https://github.com/pedronachtigall/CodAn/blob/master/models/VERT_partial.zip) models available at the subfolder ["CodAn/models/"](https://github.com/pedronachtigall/CodAn/tree/master/models).
 
