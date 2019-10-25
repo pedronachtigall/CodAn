@@ -78,7 +78,7 @@ Expected print message at the terminal:
         
 2019-10-25 09:32:17 >>>> starting CodAn (v1.0 September 2019)...
 	transcript file -> transcripts.fa
-	model -> /media/nachtigall/413C3C5E0D0853F9/Linux/pos_doc_USP/3utr/fUTR/treinamento/modelos_treinados/VERT_partial
+	model -> VERT_partial
 	strand prediction -> both
 	number of threads -> 1
 2019-10-25 09:32:17 >>>> CDS prediction...
