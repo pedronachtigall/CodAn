@@ -92,6 +92,9 @@ Follow the instructions in the quick [tutorial](https://github.com/pedronachtiga
 Frequently Asked Questions (FAQ)
 ================================
 
+What Unix OS CodAn was tested?
+- We tested CodAn in Ubuntu 16 and 18.
+
 CodAn is returning error messages. What to do?
 
 - Ensure that all modules are working properly
@@ -107,12 +110,13 @@ CodAn is returning error messages. What to do?
     ```
     - predict
     ```
-    $ predict
+    $predict
     ERROR: missing fasta file name !
     USAGE: predict [-g <genome> | -t <transcriptome> | -z <local transcriptome predictor> | -s <local genome predictor] -f <fasta file> [-c <number of cpu>]
     ```
     - CodAn
     ```
+    $codan.py
        _____           _  ___
       /  __ \         | |/ _ \
       | /  \/ ___   __| / /_\ \_ __
