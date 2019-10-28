@@ -92,8 +92,9 @@ Follow the instructions in the quick [tutorial](https://github.com/pedronachtiga
 Frequently Asked Questions (FAQ)
 ================================
 
-What Unix OS CodAn was tested?
-- We tested CodAn in Ubuntu 16 and 18.
+What OS do I need to use CodAn?
+- We tested CodAn in Ubuntu 16 and 18. However, we believe that CodAn should work on any UNIX OS able to have all dependencies necessary to run CodAn.
+
 
 CodAn is returning error messages. What to do?
 
