@@ -159,6 +159,7 @@ License
 
 Contact
 =======
+:bug::sos::speech_balloon:
 
 To report bugs, to ask for help and to give any feedback, please contact **Pedro G. Nachtigall**: pedronachtigall@gmail.com
 
