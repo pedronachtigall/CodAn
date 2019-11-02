@@ -40,6 +40,11 @@ The predictive models are available in the subfolder ["models"](https://github.c
 
 Download the model specific to your necessities, as described at the ["models"](https://github.com/pedronachtigall/CodAn/tree/master/models) folder, decompress the model file (using ```unzip model.zip```), and indicate the decompressed model path in the ```-m``` option.
 
+For example, if you are working with Full-Length transcripts generated from any vertebrate species and will perform the CDS prediction using the Vertebrate Full model.
+   - Download the [VERT_full](https://github.com/pedronachtigall/CodAn/blob/master/models/VERT_full.zip) model
+   - Decompress the model: ```unzip VERT_full.zip```
+   - Indicate the decompressed model to the ```-m``` option: ```-m path/to/VERT_full```
+
 # Usage
 
 ```
@@ -84,6 +89,62 @@ The user can download the pre-mounted protein DBs, such as swissprot (ftp://ftp.
 # Tutorial
 Follow the instructions in the quick [tutorial](https://github.com/pedronachtigall/CodAn/tree/master/tutorial) to learn how to use CodAn and interpret the results.
 
+Frequently Asked Questions (FAQ)
+================================
+
+What OS do I need to use CodAn?
+- We tested CodAn in Ubuntu 16 and 18. However, we believe that CodAn should work on any UNIX OS able to have all dependencies necessary to run CodAn.
+
+
+CodAn is returning error messages. What to do?
+
+- Ensure that all modules are working properly
+    - go to the CodAn folder and run each module separetly as follow:
+    - tops-viterbi-decoding
+    ```
+    $tops-viterbi_decoding
+    tops-viterbi_decoding: ToPS version "master 00f9ed6"
+    Allowed options:
+          -h [ --help ]         produce help message
+          -m [ --model ] arg    a decodable model
+          -F [ --fasta ]        use fasta format
+    ```
+    - predict
+    ```
+    $predict
+    ERROR: missing fasta file name !
+    USAGE: predict [-g <genome> | -t <transcriptome> | -z <local transcriptome predictor> | -s <local genome predictor] -f <fasta file> [-c <number of cpu>]
+    ```
+    - CodAn
+    ```
+    $codan.py
+       _____           _  ___
+      /  __ \         | |/ _ \
+      | /  \/ ___   __| / /_\ \_ __
+      | |    / _ \ / _` |  _  | '_ \
+      | \__/\ (_) | (_| | | | | | | |
+       \____/\___/ \__,_\_| |_/_| |_|
+
+
+    >>>> CodAn v1.0 September 2019 <<<<
+    ****Use -h for help!****
+    
+    BASIC USAGE (find CDS and UTR sequences):
+    codan.py -t transcripts.fa -o output_folder -m model_folder
+    
+    ALTERNATIVE USAGE (predict CDS and UTR sequences and perform BLAST search  in specific DB to annotated predicted genes based on similarity):
+    codan.py -t transcripts.fa -o output_folder -m model_folder -b blast_DB
+    ```
+    - if any different messages print at your terminal, you have problems with the dependencies, try to re-install them.
+
+- Ensure that the headers don't have symbols such as ":" or "|" or " "(space).
+
+- The Bio::DB::Fasta library is responsible for creating the .index. It can't process a fasta file with lines containing more than 65,536 characters. So, if you have any large sequence in one unique line, do the following:
+    - download the script [BreakLines.py](https://github.com/pedronachtigall/CodAn/blob/master/scripts/BreakLines.py)
+    - run BreakLines script: ```python3 BreakLines.py input.fasta output_breaklines.fasta```
+    - use the "output_breaklines.fasta" to run CodAn.
+
+
 Reference
 =========
 
@@ -98,6 +159,7 @@ License
 
 Contact
 =======
+:bug::sos::speech_balloon:
 
 To report bugs, to ask for help and to give any feedback, please contact **Pedro G. Nachtigall**: pedronachtigall@gmail.com
 
