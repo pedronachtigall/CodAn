@@ -307,7 +307,7 @@ sub preserve_order_pass2 {
 	     # print  "\n# ".$1." viterbi score: ".$score."\n";
       }
 
-      my $pid = open2(*Reader, *Writer, "scripts/tops_to_gtf_".$ghmm_model_name.".pl 2> /tmp/err") or die "cant execute tops_to_gtf : $!";
+      my $pid = open2(*Reader, *Writer, "scripts/tops_to_gtf_".$ghmm_model_name.".pl 2> /dev/null") or die "cant execute tops_to_gtf : $!";
       print Writer $seq;
       close(Writer);
       my $flag = 0;
@@ -481,7 +481,7 @@ my $mce2 = MCE->new (input_data=>\@tasks2,  max_workers => $ncpu, chunk_size => 
       my $length = length($x);
       #my $seq = ">".($task->{seqname})."\n".($rseq.$x.$rseq)."\n";
       my $seq = ">".($task->{seqname})."\n".($x)."\n";
-      my $pid = open2(*Reader, *Writer, "fasta_to_tops  | tops-viterbi_decoding -m $ghmm_model 2> /tmp/err") or die "cant execute viterbi_decoding:$!";
+      my $pid = open2(*Reader, *Writer, "fasta_to_tops  | tops-viterbi_decoding -m $ghmm_model 2> /dev/null") or die "cant execute viterbi_decoding:$!";
       print Writer $seq."\n";
       close(Writer);
       while (my $got = <Reader>) {
