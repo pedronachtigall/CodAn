@@ -214,7 +214,7 @@ def _retrieveORF_BOTH_(transcripts, minus, outF):
             start_seq = sequence[:int(i[0])-1]
             if start_seq == "":
                 start_seq = "None"
-            fUTR.write(">"+k+"\n"+str(stop_seq)+"\n")
+            fUTR.write(">"+k+"\n"+str(start_seq)+"\n")
     for k in sorted(startM.keys()):
         if k in minus_strand:
             i = startM[k]
