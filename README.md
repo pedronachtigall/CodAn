@@ -14,22 +14,19 @@ Getting Started
 
 # Installation
 
-Download and decompress the [CodAn.tar.gz](https://github.com/pedronachtigall/CodAn/blob/master/CodAn.tar.gz) file:
+Download and decompress the [CodAn.tar.gz](https://github.com/pedronachtigall/CodAn/blob/master/CodAn.tar.gz) file and add the bin directory to your PATH:
 
 ```
 tar -xf CodAn.tar.gz
-```
-
-OR git clone the CodAn repository:
-```
-git clone https://github.com/pedronachtigall/CodAn.git
-```
-
-and add the bin directory to your PATH:
-
-```
 export PATH=$PATH:path/to/CodAn/bin/
 ```
+
+or git clone the CodAn repository and add the bin directory to your PATH:
+```
+git clone https://github.com/pedronachtigall/CodAn.git
+export PATH=$PATH:path/to/CodAn/bin/
+```
+
 
 # Requirements
 
