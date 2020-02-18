@@ -14,13 +14,18 @@ Getting Started
 
 # Installation
 
-Decompress the [CodAn.tar.gz](https://github.com/pedronachtigall/CodAn/blob/master/CodAn.tar.gz) file:
+Download and decompress the [CodAn.tar.gz](https://github.com/pedronachtigall/CodAn/blob/master/CodAn.tar.gz) file:
 
 ```
 tar -xf CodAn.tar.gz
 ```
 
-Add the bin directory to your PATH:
+OR git clone the CodAn repository:
+```
+git clone https://github.com/pedronachtigall/CodAn.git
+```
+
+and add the bin directory to your PATH:
 
 ```
 export PATH=$PATH:path/to/CodAn/bin/
@@ -89,12 +94,32 @@ The user can download the pre-mounted protein DBs, such as swissprot (ftp://ftp.
 # Tutorial
 Follow the instructions in the quick [tutorial](https://github.com/pedronachtigall/CodAn/tree/master/tutorial) to learn how to use CodAn and interpret the results.
 
+Reference
+=========
+
+If you use or discuss CodAn, please cite the preprint:
+
+[Nachtigall et al. CodAn: predictive models for the characterization of mRNA transcripts in Eukaryotes](https://www.biorxiv.org/content/10.1101/794107v1)
+
+License
+=======
+
+[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html)
+
+Contact
+=======
+:bug::sos::speech_balloon:
+
+To report bugs, to ask for help and to give any feedback, please contact **Pedro G. Nachtigall**: pedronachtigall@gmail.com
+
 Frequently Asked Questions (FAQ)
 ================================
 
 What OS do I need to use CodAn?
 - We tested CodAn in Ubuntu 16 and 18. However, we believe that CodAn should work on any UNIX OS able to have all dependencies necessary to run CodAn.
 
+How long does codan need to run an analysis with a set of 200,000 sequences?
+- By using 1 thread, the estimated time to analyze 200,000 sequences with CodAn is around 53 minutes. If the user has more threads available for use, which can be set with the option ```-c N``` (where N in the number of threads), the processing time will decrease proportionally as the number of threads being used (e.g., if the user has 6 threads available for the analysis [option ```-c 6```], the processing time of 200,000 sequences will be around 18 minutes). The testes were performed using a personal computer (6-Core i7 with 16Gb memory).
 
 CodAn is returning error messages. What to do?
 
@@ -143,23 +168,3 @@ CodAn is returning error messages. What to do?
     - download the script [BreakLines.py](https://github.com/pedronachtigall/CodAn/blob/master/scripts/BreakLines.py)
     - run BreakLines script: ```python3 BreakLines.py input.fasta output_breaklines.fasta```
     - use the "output_breaklines.fasta" to run CodAn.
-
-
-Reference
-=========
-
-If you use or discuss CodAn, please cite the preprint:
-
-[Nachtigall et al. CodAn: predictive models for the characterization of mRNA transcripts in Eukaryotes](https://www.biorxiv.org/content/10.1101/794107v1)
-
-License
-=======
-
-[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html)
-
-Contact
-=======
-:bug::sos::speech_balloon:
-
-To report bugs, to ask for help and to give any feedback, please contact **Pedro G. Nachtigall**: pedronachtigall@gmail.com
-
