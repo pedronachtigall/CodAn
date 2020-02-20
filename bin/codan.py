@@ -364,7 +364,7 @@ def _blast_search_(outF, blastDB, HSP, threads):
     #         "-qcov_hsp_perc", str(HSP),
     #         "-out", outF+"blast_results/"+"blast_result.tabular"]
     # subprocess.call(args)
-    callsequence = "blastx -query "+outF+"ORF_sequences.fasta -db "+blastDB+" -outfmt 6 -max_target_seqs 1 -qcov_hsp_perc "+HSP+" -out "+outF+" blast_results/blast_result.tabular -num_threads "+threads
+    callsequence = "blastx -query "+outF+"ORF_sequences.fasta -db "+blastDB+" -outfmt 6 -max_target_seqs 1 -qcov_hsp_perc "+HSP+" -out "+outF+" blast_results/blast_result.tabular -num_threads "+str(threads)
     os.system(callsequence)
     
     print(dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")+" >>>> parsing blast results...")
