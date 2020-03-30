@@ -139,6 +139,7 @@ Frequently Asked Questions (FAQ)
         cpan> install MCE::Mutex
         cpan> install Bio::SeqIO
         cpan> install Bio::DB::Fasta
+        cpan> exit
         ```
     - Install Biopython module through pip:
         - ```pip install biopython```
