@@ -46,4 +46,4 @@ The datasets were designed for 34 Eukaryote species:
 
 The protein-coding sequences available for each species were retrieved from RefSeq database at NCBI (release number 94; ftp://ftp.ncbi.nlm.nih.gov/refseq/), except the sequences from *C. elegans* that were retrieved at the WormBase (release WS270; ftp://ftp.wormbase.org/pub/wormbase/)
 
-The ncRNA sequences for each species were retrieved the RFAM database (release 14.1;https://rfam.xfam.org/). The ncRNA datasets only contain the ncRNA sequences longer than 200nt length.
+The ncRNA sequences for each species were retrieved the [RFAM](https://rfam.xfam.org/) database (release 14.1). The ncRNA datasets only contain the ncRNA sequences longer than 200nt length.
