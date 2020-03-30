@@ -5,7 +5,7 @@ CodAn
 <!---[![GitHub Downloads](https://img.shields.io/github/downloads/pedronachtigall/CodAn/total.svg?style=social&logo=github&label=Download)](https://github.com/pedronachtigall/CodAn/releases) -->
 [![Latest GitHub release](https://img.shields.io/github/release/pedronachtigall/CodAn.svg)](https://github.com/pedronachtigall/CodAn/releases/latest)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3403273.svg)](https://doi.org/10.5281/zenodo.3403273)
-<!---[![Published in Genome Biology](https://img.shields.io/badge/published%20in-Genome%20Biology-blue.svg)](https://doi.org/10.1101/gr.214270.116) -->
+<!---[![Published in Briefings in Bioinformatics](https://img.shields.io/badge/published%20in-Briefings%20in%20Bioinformatics-blue)](https://doi.org/10.1101/gr.214270.116) -->
 
 **CodAn** (**Cod**ing sequence **An**notator) is a computational tool designed to characterize the CDS and UTR regions on transcripts from any Eukaryote species.
 
@@ -35,6 +35,17 @@ export PATH=$PATH:path/to/CodAn/bin/
 - [Perl](https://www.perl.org/), [Bioperl](https://bioperl.org/) and [MCE](https://metacpan.org/release/MCE) (libmce-perl)
     - ```apt-get install bioperl libmce-perl```
 - [NCBI-BLAST](https://www.ncbi.nlm.nih.gov/books/NBK279671/) (v2.9.0 or above)
+
+:warning: Ensure that all requirements are working properly.
+
+:warning:
+If the user wants to install CodAn and all dependencies using [Conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html), follow the steps below:
+```
+conda create -n codan_env python=3.7 biopython perl perl-bioperl perl-mce blast
+```
+Then, run CodAn as described in the "Usage" section.
+
+After finish the analysis and deactivate the conda environment just use the command: ```conda deactivate```
 
 # Predictive models
 
@@ -112,13 +123,27 @@ To report bugs, to ask for help and to give any feedback, please contact **Pedro
 Frequently Asked Questions (FAQ)
 ================================
 
-What OS do I need to use CodAn?
+**[Q1]** What OS do I need to use CodAn?
 - We tested CodAn in Ubuntu 16 and 18. However, we believe that CodAn should work on any UNIX OS able to have all dependencies necessary to run CodAn.
 
-How long does codan need to run an analysis with a set of 200,000 sequences?
+**[Q2]** How long does codan need to run an analysis with a set of 200,000 sequences?
 - By using 1 thread, the estimated time to analyze 200,000 sequences with CodAn is around 53 minutes. If the user has more threads available for use, which can be set with the option ```-c N``` (where N in the number of threads), the processing time will decrease proportionally as the number of threads being used (e.g., if the user has 6 threads available for the analysis [option ```-c 6```], the processing time of 200,000 sequences will be around 16 minutes). The running time measurement was performed using a personal computer (6-Core i7 with 16Gb memory).
 
-CodAn is returning error messages. What to do?
+**[Q3]** I am trying to run CodAn on a server and I am not the admin. How can I install all dependencies without using ```apt```?
+- You can follow the instructions to use [Conda environments](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html).
+- OR, try to install the required perl and python modules following the commands below:
+    - Install MCE and Bioperl modules through CPAN (it will install the modules locally):
+        - ```perl -MCPAN -e shell```
+        ```
+        cpan> install MCE
+        cpan> install MCE::Mutex
+        cpan> install Bio::SeqIO
+        cpan> install Bio::DB::Fasta
+        ```
+    - Install Biopython module through pip:
+        - ```pip install biopython```
+
+**[Q4]** CodAn is returning error messages. What to do?
 
 - Ensure that all modules are working properly
     - go to the CodAn folder and run each module separetly as follow:
