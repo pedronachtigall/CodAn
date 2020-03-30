@@ -5,7 +5,7 @@ CodAn
 <!---[![GitHub Downloads](https://img.shields.io/github/downloads/pedronachtigall/CodAn/total.svg?style=social&logo=github&label=Download)](https://github.com/pedronachtigall/CodAn/releases) -->
 [![Latest GitHub release](https://img.shields.io/github/release/pedronachtigall/CodAn.svg)](https://github.com/pedronachtigall/CodAn/releases/latest)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3403273.svg)](https://doi.org/10.5281/zenodo.3403273)
-<!---[![Published in Briefings in Bioinformatics](https://img.shields.io/badge/published%20in-Briefings%20in%20Bioinformatics-blue)](https://doi.org/10.1101/gr.214270.116) -->
+[![Published in Briefings in Bioinformatics](https://img.shields.io/badge/published%20in-Briefings%20in%20Bioinformatics-blue)](https://doi.org/10.1093/bib/bbaa045)
 
 **CodAn** (**Cod**ing sequence **An**notator) is a computational tool designed to characterize the CDS and UTR regions on transcripts from any Eukaryote species.
 
@@ -104,9 +104,10 @@ Follow the instructions in the quick [tutorial](https://github.com/pedronachtiga
 Reference
 =========
 
-If you use or discuss CodAn, please cite the preprint:
+If you use or discuss CodAn, please cite:
 
-[Nachtigall et al. CodAn: predictive models for the characterization of mRNA transcripts in Eukaryotes](https://www.biorxiv.org/content/10.1101/794107v1)
+Nachtigall et al. (2020) CodAn: predictive models for precise identification of coding regions in Eukaryotic transcripts. Briefings in bioinformatics. DOI:[https://doi.org/10.1093/bib/bbaa045](https://doi.org/10.1093/bib/bbaa045)
+
 
 License
 =======
