@@ -36,11 +36,9 @@ export PATH=$PATH:path/to/CodAn/bin/
     - ```apt-get install bioperl libmce-perl```
 - [NCBI-BLAST](https://www.ncbi.nlm.nih.gov/books/NBK279671/) (v2.9.0 or above)
 
-:warning: Ensure that all requirements are working properly.
+Ensure that all requirements are working properly.
 
-:warning: Tip:
-
-If the user wants to install CodAn and all dependencies using [Conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html), follow the steps below:
+:warning: If the user wants to install CodAn and all dependencies using [Conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html), follow the steps below:
 - Create the environment:
     - ```conda create -n codan_env python=3.7 biopython perl perl-bioperl perl-mce blast```
 - To activate the environment to run CodAn just use the command: ```conda activate codan_env```
