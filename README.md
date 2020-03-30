@@ -45,7 +45,7 @@ If the user wants to install CodAn and all dependencies using [Conda environment
     - ```conda create -n codan_env python=3.7 biopython perl perl-bioperl perl-mce blast```
 - To activate the environment to run CodAn just use the command: ```conda activate codan_env```
 - Then, run CodAn as described in the "Usage" section.
-- After finish the analysis and deactivate the conda environment just use the command: ```conda deactivate```
+- To deactivate the environment just use the command: ```conda deactivate```
 
 
 # Predictive models
