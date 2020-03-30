@@ -38,14 +38,15 @@ export PATH=$PATH:path/to/CodAn/bin/
 
 :warning: Ensure that all requirements are working properly.
 
-:warning:
-If the user wants to install CodAn and all dependencies using [Conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html), follow the steps below:
-```
-conda create -n codan_env python=3.7 biopython perl perl-bioperl perl-mce blast
-```
-Then, run CodAn as described in the "Usage" section.
+:warning: Tip:
 
-After finish the analysis and deactivate the conda environment just use the command: ```conda deactivate```
+If the user wants to install CodAn and all dependencies using [Conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html), follow the steps below:
+- Create the environment:
+    - ```conda create -n codan_env python=3.7 biopython perl perl-bioperl perl-mce blast```
+- To activate the environment to run CodAn just use the command: ```conda activate codan_env```
+- Then, run CodAn as described in the "Usage" section.
+- After finish the analysis and deactivate the conda environment just use the command: ```conda deactivate```
+
 
 # Predictive models
 
