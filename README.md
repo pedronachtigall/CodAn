@@ -41,8 +41,11 @@ Ensure that all requirements are working properly.
 :warning: If the user wants to install CodAn and all dependencies using [Conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html), follow the steps below:
 - Create the environment:
     - ```conda create -n codan_env python=3.7 biopython perl perl-bioperl perl-mce blast```
-- To activate the environment to run CodAn just use the command: ```conda activate codan_env```
+- Git clone the CodAn repository and add to your PATH:
+    - ```git clone https://github.com/pedronachtigall/CodAn.git```
+    - ```export PATH=$PATH:path/to/CodAn/bin/```
 - Then, run CodAn as described in the "Usage" section.
+- To activate the environment to run CodAn just use the command: ```conda activate codan_env```
 - To deactivate the environment just use the command: ```conda deactivate```
 
 
