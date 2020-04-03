@@ -27,6 +27,7 @@ git clone https://github.com/pedronachtigall/CodAn.git
 export PATH=$PATH:path/to/CodAn/bin/
 ```
 
+:warning: If the user is using a macOS, please download the "tops-viterbi_decoding" compiled to macOS [here](https://github.com/pedronachtigall/CodAn/blob/master/for_MacOS_users.zip), decompress the file ```unzip for_MacOS_users.zip```, and copy the "tops-viterbi_decoding" to the bin folder ```cp for_MacOS_users/tops-viterbi_decoding path/to/CodAn/bin/```
 
 # Requirements
 
@@ -127,7 +128,7 @@ Frequently Asked Questions (FAQ)
 ================================
 
 **[Q1]** What OS do I need to use CodAn?
-- We tested CodAn in Ubuntu 16 and 18. However, we believe that CodAn should work on any UNIX OS able to have all dependencies necessary to run CodAn.
+- We tested CodAn in Ubuntu 16 and 18. Moreover, we tested CodAn in MacOS Mojave and Catalina, but the user need to download the "tops-viterbi_decoding" compiled to macOS to replace the default "tops-viterbi_decoding" as described in the "Installation" section. In this sense, we believe that CodAn should work on any UNIX OS able to have all dependencies necessary to run CodAn.
 
 **[Q2]** How long does codan need to run an analysis with a set of 200,000 sequences?
 - By using 1 thread, the estimated time to analyze 200,000 sequences with CodAn is around 53 minutes. If the user has more threads available for use, which can be set with the option ```-c N``` (where N in the number of threads), the processing time will decrease proportionally as the number of threads being used (e.g., if the user has 6 threads available for the analysis [option ```-c 6```], the processing time of 200,000 sequences will be around 16 minutes). The running time measurement was performed using a personal computer (6-Core i7 with 16Gb memory).
