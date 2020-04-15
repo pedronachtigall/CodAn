@@ -45,6 +45,8 @@ Ensure that all requirements are working properly.
 - Git clone the CodAn repository and add to your PATH:
     - ```git clone https://github.com/pedronachtigall/CodAn.git```
     - ```export PATH=$PATH:path/to/CodAn/bin/```
+- It may be needed to apply "execution permission" to all bin executables:
+    - ```chmod 777 path/to/CodAn/bin/*```
 - Then, run CodAn as described in the "Usage" section.
 - To activate the environment to run CodAn just use the command: ```conda activate codan_env```
 - To deactivate the environment just use the command: ```conda deactivate```
