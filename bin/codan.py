@@ -287,8 +287,8 @@ def _retrieveORF_BOTH_(transcripts, minus, outF):
     os.remove(outF+"ORFs_plus.gtf")
     os.remove(outF+"ORFs_minus.gtf")
     os.remove(outF+"minus.fa")
-    os.remove(outF+"minus.fa.index")
-    os.remove(transcripts+".index")
+    os.system("rm "+outF+"minus.fa.*")
+    os.system("rm "+transcripts+".index*")
 
 #>>>>Predict CDS in transcripts (used in _codan_)
 def _predict_PLUS_(transcripts, outF, model, cpu):
