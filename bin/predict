@@ -13,12 +13,12 @@ use Cwd qw(cwd);
 use File::Basename;
 use IPC::Open2;
 use Data::Dumper;
-use Time::HiRes qw( clock_gettime clock_getres clock_nanosleep
-                    ITIMER_REAL ITIMER_VIRTUAL ITIMER_PROF
-		                        ITIMER_REALPROF );
+#use Time::HiRes qw( clock_gettime clock_getres clock_nanosleep
+#                    ITIMER_REAL ITIMER_VIRTUAL ITIMER_PROF
+#		                        ITIMER_REALPROF );
 				       
 
-my $begin_time2 = clock_gettime();
+#my $begin_time2 = clock_gettime();
 
 
 my $cwd = cwd();
@@ -305,7 +305,7 @@ my $mce2 = MCE->new (input_data=>\@tasks,  max_workers => $ncpu, chunk_size => 1
 
       opendir (GHMM, "$predictor/ghmm.".$mid) or die "Cant open $predictor/ghmm: $!\n";
       chdir(GHMM); 
-      my $begin_time = clock_gettime();
+      # my $begin_time = clock_gettime();
       #print STDERR MCE->pid()." tops ".$filename." ".$begin_time."\n";
       my $output = `tops-viterbi_decoding -F -m $ghmm_model 2> /dev/null  < $filename`;
       my @out = split(/\n/, $output);
