@@ -104,6 +104,8 @@ codan.py -t transcripts.fa -o output_folder -m model -b blast_DB
 To run this optional step, just indicate a specific protein DB mounted using the ```makeblastdb``` function from the NCBI-BLAST approach.
 The user can download the pre-mounted protein DBs, such as swissprot (ftp://ftp.ncbi.nlm.nih.gov/blast/db/).
 
+:warning: :warning: If CodAn not produces any prediction, please check the **Q4** in the FAQ section. :warning: :warning:
+
 # Tutorial
 Follow the instructions in the quick [tutorial](https://github.com/pedronachtigall/CodAn/tree/master/tutorial) to learn how to use CodAn and interpret the results.
 
@@ -150,7 +152,7 @@ Frequently Asked Questions (FAQ)
     - Install Biopython module through pip:
         - ```pip install biopython```
 
-**[Q4]** CodAn is returning error messages. What to do?
+**[Q4]** CodAn is making 0 predictions in the test set. What to do?
 
 - Ensure that all modules are working properly
     - go to the CodAn folder and run each module separetly as follow:
