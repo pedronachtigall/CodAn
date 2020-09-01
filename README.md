@@ -199,3 +199,10 @@ Frequently Asked Questions (FAQ)
     - download the script [BreakLines.py](https://github.com/pedronachtigall/CodAn/blob/master/scripts/BreakLines.py)
     - run BreakLines script: ```python3 BreakLines.py input.fasta output_breaklines.fasta```
     - use the "output_breaklines.fasta" to run CodAn.
+
+**[Q5]** How can I translate the partial CDSs predicted by the CodAn PARTIAL models?
+
+- You can download the script ```TranslatePartial.py``` [here](https://github.com/pedronachtigall/CodAn/blob/master/scripts/).
+    ```
+    TranslatePartial.py partialCDS.fa partialCDS_peptide.fa
+    ````
