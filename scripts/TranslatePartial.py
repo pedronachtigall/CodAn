@@ -41,7 +41,7 @@ def _GenOutput_(fasta, output):
             if frame1.count("*") <= 1 and not frame1[-1] == "*":
                 translated = _Translate_(SEQ, 3)
                 for n in translated.keys():
-                    if translated[n][-1] == "*":
+                    if "*" not in translated[n] or (translated[n].count("*") == 1 and translated[n][-1] == "*"):
                         OUT.write(">"+k+" frame"+str(n)+"\n"+translated[n]+"\n")
             if frame1.count("*") > 1:
                 translated = _Translate_(SEQ, 3)
