@@ -36,12 +36,17 @@ def _GenOutput_(fasta, output):
         if SEQ.startswith("ATG"):
             #tranlate with frame 1
             frame1 = _Translate_(SEQ, 1)
-            if frame1.count("*") <= 1:
+            if frame1.count("*") == 1 and frame1[-1] == "*":
                 OUT.write(">"+k+" frame1\n"+frame1+"\n")
+            if frame1.count("*") <= 1 and not frame1[-1] == "*":
+                translated = _Translate_(SEQ, 3)
+                for n in translated.keys():
+                    if translated[n][-1] == "*":
+                        OUT.write(">"+k+" frame"+str(n)+"\n"+translated[n]+"\n")
             if frame1.count("*") > 1:
                 translated = _Translate_(SEQ, 3)
                 for n in translated.keys():
-                    if "*" not in translated[n]:
+                    if "*" not in translated[n] or (translated[n].count("*") == 1 and translated[n][-1] == "*"):
                         OUT.write(">"+k+" frame"+str(n)+"\n"+translated[n]+"\n")
         if not SEQ.startswith("ATG"):
             if SEQ[-3:] in ["TAA", "TAG", "TGA"]:
