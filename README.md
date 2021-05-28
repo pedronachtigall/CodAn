@@ -39,7 +39,9 @@ export PATH=$PATH:path/to/CodAn/bin/
 
 Ensure that all requirements are working properly.
 
-:warning: If the user wants to install CodAn and all dependencies using [Conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html), follow the steps below:
+:warning: **Conda environment installation**
+
+If the user wants to install CodAn and all dependencies using [Conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html), follow the steps below:
 - Create the environment:
     - ```conda create -n codan_env python=3.7 biopython perl perl-bioperl perl-mce blast```
 - Git clone the CodAn repository and add to your PATH:
@@ -51,6 +53,13 @@ Ensure that all requirements are working properly.
 - To activate the environment to run CodAn just use the command: ```conda activate codan_env```
 - To deactivate the environment just use the command: ```conda deactivate```
 
+:warning: **Docker installation**
+
+If the user takes advantage of [Docker](https://docs.docker.com/) in its system, we have a pre-built Dockerfile that allows an easy build and containerization of CodAn. Just follow the steps below:
+- Git clone CodAn repository (`git clone https://github.com/pedronachtigall/CodAn.git`) and change to CodAn directory (`cd CodAn`)
+- Build the container: `docker build -t codan:v1.0 .` (It may take a few minutes)
+- In your working directory (the transcript file should be in there), enter in the container shell: `docker run -v $PWD:/project --rm -it codan:v1.0`
+- Just run CodAn by indicating one of the models to the `-m` option: `-m /app/CodAn/models/{VERT|INV|PLANTS|FUNGI}_{full|partial}`.
 
 # Predictive models
 
