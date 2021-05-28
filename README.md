@@ -55,6 +55,8 @@ If the user wants to install CodAn and all dependencies using [Conda environment
 
 :warning: **Docker installation**
 
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/pedronachtigall/codan)
+
 If the user takes advantage of [Docker](https://docs.docker.com/) in its system, we have a pre-built Dockerfile that allows an easy build and containerization of CodAn. Just follow the steps below:
 - Git clone CodAn repository (`git clone https://github.com/pedronachtigall/CodAn.git`) and change to CodAn directory (`cd CodAn`)
 - Build the container: `docker build -t codan:v1.0 .` (It may take a few minutes)
