@@ -62,6 +62,12 @@ If the user takes advantage of [Docker](https://docs.docker.com/) in its system,
 - Just run CodAn by indicating one of the models to the `-m` option: `-m /app/CodAn/models/{VERT|INV|PLANTS|FUNGI}_{full|partial}`
 - The command line must be similar to `codan.py -t transcripts.fa -m /app/CodAn/models/MODEL_full/ -o output_folder`
 
+The user may also pull CodAn container direct from the Docker repository following the steps below:
+- Pull CodAn container: `docker pull pedronachtigall/codan:latest`
+- Run CodAn container: `docker run -v $PWD:/project --rm -it pedronachtigall/codan:latest`
+    - Please, notice that you should be in the folder containing your transcripts file
+- Use a command line similar to `codan.py -t transcripts.fa -m /app/CodAn/models/MODEL_full/ -o output_folder` to run CodAn and perform its predictions
+
 # Predictive models
 
 The predictive models are available in the subfolder ["models"](https://github.com/pedronachtigall/CodAn/tree/master/models). The folder contains all models designed for Eukaryote species (i.e., Fungi, Plants and Animals [Invertebrates and Vertebrates]). The models were designed to be used in Full-Length or Partial transcripts.
