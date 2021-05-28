@@ -14,6 +14,9 @@ RUN mkdir /app
 # download CodAn and install it
 RUN git clone https://github.com/pedronachtigall/CodAn.git && mv CodAn /app && chmod +x /app/CodAn/bin/*
 
+# decompress the models
+RUN cd /app/CodAn/models && (for i in *.zip; do (echo $i; unzip $i); done;)
+
 ENV LC_ALL=C
 ENV PATH=/app/CodAn/bin:$PATH
 
