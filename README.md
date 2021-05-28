@@ -59,7 +59,8 @@ If the user takes advantage of [Docker](https://docs.docker.com/) in its system,
 - Git clone CodAn repository (`git clone https://github.com/pedronachtigall/CodAn.git`) and change to CodAn directory (`cd CodAn`)
 - Build the container: `docker build -t codan:v1.0 .` (It may take a few minutes)
 - In your working directory (the transcript file should be in there), enter in the container shell: `docker run -v $PWD:/project --rm -it codan:v1.0`
-- Just run CodAn by indicating one of the models to the `-m` option: `-m /app/CodAn/models/{VERT|INV|PLANTS|FUNGI}_{full|partial}`.
+- Just run CodAn by indicating one of the models to the `-m` option: `-m /app/CodAn/models/{VERT|INV|PLANTS|FUNGI}_{full|partial}`
+- The command line must be similar to `codan.py -t transcripts.fa -m /app/CodAn/models/MODEL_full/ -o output_folder`
 
 # Predictive models
 
