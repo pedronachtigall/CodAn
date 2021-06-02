@@ -439,7 +439,7 @@ def __main__():
   \____/\___/ \__,_\_| |_/_| |_|
                           
                                
->>>> CodAn v1.0 September 2019 <<<<
+>>>> CodAn v1.1 June 2021 <<<<
 ****Use -h for help!****
 
 BASIC USAGE (find CDS and UTR sequences):
@@ -492,7 +492,7 @@ codan.py -t transcripts.fa -o output_folder -m model_folder -b blast_DB
   \____/\___/ \__,_\_| |_/_| |_|
                           
         """)
-        print(dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")+" >>>> starting CodAn (v1.0 September 2019)...")
+        print(dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")+" >>>> starting CodAn (v1.1 June 2021)...")
         print("\ttranscript file -> "+options.transcripts)
         print("\tmodel -> "+options.model)
         print("\tstrand prediction -> "+options.strand)
