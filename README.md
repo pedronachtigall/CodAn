@@ -53,6 +53,16 @@ If the user wants to install CodAn and all dependencies using [Conda environment
 - To activate the environment to run CodAn just use the command: ```conda activate codan_env```
 - To deactivate the environment just use the command: ```conda deactivate```
 
+:warning: **Conda installation**
+
+[![Install with conda](https://img.shields.io/badge/Install%20with-conda-success)](https://anaconda.org/bioconda/codan)
+
+CodAn can be installed with Conda by using the command: `conda install -c bioconda codan`
+
+The user can also create an environment with the command: `conda create -n codan_env -c bioconda codan`. Then, activate the environment `conda activate codan_env` to run CodAn in Linux and MacOS systems.
+
+- Please, notice that the Conda installation of CodAn does not download the models used in predictions. Download the model specific to your usage [here](https://github.com/pedronachtigall/CodAn/tree/master/models) or using `wget` and decompress the model (by using `unzip` or other tool) to be set in the `-m` parameter.
+
 :warning: **Docker installation**
 
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/pedronachtigall/codan)
