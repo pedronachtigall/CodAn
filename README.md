@@ -61,6 +61,7 @@ CodAn can be installed with Conda by using the command: `conda install -c biocon
 
 The user can also create an environment with the command: `conda create -n codan_env -c bioconda codan`. Then, activate the environment `conda activate codan_env` to run CodAn in Linux and MacOS systems.
 
+- If need, add the conda-forge in the command: `conda create -n codan_env -c bioconda -c conda-forge codan`
 - Please, notice that the Conda installation of CodAn does not download the models used in predictions. Download the model specific to your usage [here](https://github.com/pedronachtigall/CodAn/tree/master/models) or using `wget` and decompress the model (by using `unzip` or other tool) to be set in the `-m` parameter.
 
 :warning: **Docker installation**
@@ -234,3 +235,10 @@ Frequently Asked Questions (FAQ)
     ```
     TranslatePartial.py partialCDS.fa partialCDS_peptide.fa
     ````
+
+**[Q6]** The conda installation is returning 0 predictions. What to do?
+
+- It can be some errors related to the bioconda source in the conda recipe or lib paths. Try to re-intall the conda environment with the following command:
+    ```
+    conda create -n codan -c bioconda -c conda-forge codan python=3.7 biopython perl perl-bioperl perl-mce blast
+    ```
